@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.card1 .card-header, .card1 .icon, .card1 button{
+    background-color: #ff6b6b;
+}
+
+.card2 .card-header, .card2 .icon, .card2 button{
+    background-color: #4ecdc4;
+}
+
+.card3 .card-header, .card3 .icon, .card3 button{
+    background-color: #45b7d1;
+}
+
+.container > *{
+    flex-basis: 350px;
+    height: 450px;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header{
+    flex-grow:0.5;
+    padding:5px 15px;
+    text-align:center;
+    color: #fff;
+}
+
+.card-header p{
+    font-size: .8rem;
+}
+
+.card-header hr{
+    margin: 15px 0;
+}
+
+.card-body{
+    flex-grow:6;
+    background-color: #ffff;
+    padding:10px 25px;
+}
+
+.card-footer{
+    flex-grow:0;
+}
+
+/* Card */
+
+
+.price{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cash{
+    position: relative;
+    bottom: 10px;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.amount{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.list-benefit{
+    margin-bottom: 55px;
+}
+
+.line-section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: row;
+}
+
+.text{
+    text-align: left;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+button{
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 1090px) {
+    
+    .container{
+        flex-direction: column;
+    }
+
+    .container > *{
+        margin-bottom: 20px;
+        flex-basis: 100%;
+        width: 350px;
+    }
+}
